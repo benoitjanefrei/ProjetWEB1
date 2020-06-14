@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Your turn</title>
+    <script type="text/javascript" src="script1.js"></script>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body onload="quizz(); display_footer();">
+    <header>
+        <nav style="position:fixed;background-position-y:top;">
+            <ul>
+                <li class="element_menu">
+                    <a href="breaking_bad_home_page.html">Home</a>
+                </li>
+                <li class="element_menu">
+                    <a href="characters_list.html">Lst</a>
+                </li>
+                <li class="element_menu">
+                    <a href="video_best_moment.html">Best moments</a>
+                </li>
+                <li class="element_menu">
+                    <a href="characters_description.html?char_id=1">5eaking guy</a>
+                </li>
+                <li class="element_menu currentNav">
+                    <a href="quizz.html">Your turn</a>
+                </li>
+                <li class="element_menu">
+                    <a href="credits.html">Credits</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="quizz_style">
+            <center>
+                <img style="width:50px;height:50px" src="abeille.jpg" />
+            </center>
+            <h1>What do you know about 5eaking 6d</h1>
+            <div id="the_quote">
+
+            </div>
+            <select id="char_choice">
+                <option value="">--choice of the character--</option>
+            </select>
+            <button onclick="validation_choix();"> VALIDATION</button>
+            <div class="result" id="result1"></div>
+            <div id="the_death">
+
+            </div>
+            <select id="saison_choice">
+                <option value="">---choice of the season----</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select id="episode_choice">
+                <option value="">--choice of the episode--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+            </select>
+            <button onclick="validation_death();"> VALIDATION</button>
+            <div class="result" id="result2"></div>
+            <div id="the_nickname">
+
+            </div>
+            <input id="myChamps" type="text" placeholder="the name of the character you're thinking of" />
+            <button onclick="validation_nickname();"> VALIDATION</button>
+            <div class="result" id="result3"></div>
+        </div>
+
+    </main>
+    <footer>
+
+        <div class="footer1">
+            <p>
+                <span id="death"></span>
+                <span id="episodes"></span>
+                <span id="quotes"></span>
+
+            </p>
+        </div>
+        <p>
+            <a href="credits.html">Credits</a>
+            <a target="new" href="https://www.facebook.com/benoit.jan.3"><img src="facebook.png" /></a>
+            <a target="new" href="https://www.instagram.com/pms_benoit/"><img src="instagram.png" /></a>
+        </p>
+
+    </footer>
+</body>
+</html>

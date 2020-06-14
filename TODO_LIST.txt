@@ -1,0 +1,41 @@
+VERY IMPORTANT:
+>>page credit  photo de vous, présenattion du site, ... , liens vers vos réseaux sociaux
+page accueil  petit gif pour rigoler
+>>footer : Mettre quelque chose(exemple :notice , sachant que possiblité de faire une page notice ou documentation avec notice et explicaion de l'api utilisé)
+notice 
+
+
+Travail à faire :
+	>>gérer la description ( flèche droite et gauche)
+	>>le style(barre de naviguation (mettre en valeur la naviguation avctive,un hover pour la naviguation)
+	la génération de la liste en fonction des groupes//*/*///////utiliser l'API /api/characters?limit=10&offset=10 pour affiher les caracter par 10 avec un bouton next /previous (page LIST characters)
+	>>trouver un autre titre pour description pour avoir un symbole (tableau periodique) cohérant
+	>>balise title de chaque page et favicon
+	>>style de toutes les photos(cadre blanc ??? PASSER DU TEMPS POUR FAIRE BEAU, mais on a le temps)
+	>>fnir le quizz avec les différent type de question
+golden buzzer
+	>faire les crédits
+	>>mettre les vidéo que louis a envoyé + mise en forme
+	>>changer le paramètre faux du url description(char_id id_char)
+	faire la page des épisodes trié par s et ep/*/*/*/*/*/
+		>>si on clique sur un perso --> affiche la page description du perso
+		>>faire en sorte de pouvoir charger la description à partir de l'id ou du nom
+	>>Footer ou ailleurs -> indiquer nombre d'épisode, nb characters, nb quotes , nb death (si tu l'utilise dans une des pages)
+
+
+>>utiiser /api/quote/random pour afficher une citation + auteur sur la page d'acceuil
+utiliser /api/quote?author=Jesse+Pinkman pour afficher toutes les citations de l'auteur et / ou /api/quote/random?author=Skyler+White pour afficher une seule citation de l'auteur de manière random(a voir)
+>>liste des personnages: mouse over sur l'image , afficher le nickname ou compteur de mort ou ..... bref qqchose qui bouge
+page episode saison
+>>mise en forme de BACK ET NEXT dans descritption
+
+
+page accueil = gif
+list en fonction des groupes
+récompense pour quizz
+quotes aléatoire sur la page description
+cookie pour le nom de la personne (et récompense)
+page notice
+mise en page footer
+faux chargement de 5 sec pour video
+

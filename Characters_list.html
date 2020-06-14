@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Characters list</title>
+    <script type="text/javascript" src="script1.js"></script>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body id="page_list" onload="recuperation_characters_forList(); display_footer();">
+	<header>
+		<nav>
+			<ul>
+				<li class="element_menu">
+					<a href="breaking_bad_home_page.html">Home</a>
+				</li>
+				<li class="element_menu currentNav">
+					<a href="characters_list.html">Lst</a>
+				</li>
+				<li class="element_menu ">
+					<a href="video_best_moment.html">Best moments</a>
+				</li>
+				<li class="element_menu ">
+					<a href="characters_description.html?char_id=1">5eaking guy</a>
+				</li>
+				<li class="element_menu">
+					<a href="quizz.html">Your turn</a>
+				</li>
+				<li class="element_menu">
+					<a href="credits.html">Credits</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main id="char_list">
+		<h1>Click on images to show characters details</h1>
+
+		<!-- start popup -->
+		<style>
+			.btnPopup {
+				background-color: orangered;
+				padding: 1em 2em;
+				cursor: pointer;
+			}
+
+				.btnPopup:hover {
+					background-color: rgb(192, 192, 192);
+				}
+
+			.overlay {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				left: auto;
+				top: auto;
+				background-color: rgba(0,0,0, 0.5);
+				background-color: rgba(0,0,0, 0.5);
+				width: 100%;
+				width: auto;
+				height: 100%;
+				height: auto;
+				z-index: 1;
+				display: none;
+			}
+
+			.popup {
+				margin: 10% auto;
+				margin: 1% auto;
+				width: 70%;
+				width: auto;
+				background-color: rgb(243, 243, 243);
+				background-color: #315434;
+				padding: 1em;
+				box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+				border-radius: 5px;
+				border: 1px solid white;
+			}
+
+				.popup p {
+					color: white;
+					text-align: left;
+				}
+
+			.btnClose {
+				float: right;
+				font-size: 16pt;
+				cursor: pointer;
+				color: rgb(26, 26, 26);
+			}
+		</style>
+		<script>
+
+			function openMoadl(i) {
+
+				document.querySelectorAll('.overlay').forEach(function (el) {
+					el.style.display = 'none';
+				});
+
+				document.getElementById('overlay' + i).style.display = 'block';
+				//document.getElementById('overlay' + i).style.display='ruby-text-container';
+			}
+			function closeModal(i) {
+				document.getElementById('overlay' + i).style.display = 'none';
+
+			}
+
+		</script>;
+		<!-- 			<button id="btnPopup" class="btnPopup" onclick="openMoadl();">Afficher Popup</button>
+				<div id="overlay" class="overlay">
+					<div id="popup" class="popup">
+						<h2>Exemple simple de popup <span id="btnClose" class="btnClose" onclick="closeModal();">&times;</span></h2>
+						<div>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a nulla
+						a massa interdum imperdiet sed nec nibh. Proin porttitor euismod nulla ut
+						interdum. Cras elementum placerat aliquam.
+						</div>
+					</div>
+				</div> -->
+		<!-- End popup -->
+		<div id="the_list">
+
+		</div>
+	</main>
+	<footer>
+
+		<div class="footer1">
+			<p>
+				<span id="death"></span>
+				<span id="episodes"></span>
+				<span id="quotes"></span>
+
+			</p>
+		</div>
+		<p>
+			<a href="credits.html">Credits</a>
+			<a target="new" href="https://www.facebook.com/benoit.jan.3"><img src="facebook.png" /></a>
+			<a target="new" href="https://www.instagram.com/pms_benoit/"><img src="instagram.png" /></a>
+		</p>
+	</footer>
+
+</body>
+</html>

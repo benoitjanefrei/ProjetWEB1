@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheettest.css" />
+    <script type="text/javascript" src="script1.js"></script>
+    <style>
+        div {
+            border: 5px solid red;
+        }
+
+        footer {
+            border: 5px solid green;
+        }
+
+        header {
+            border: 5px solid blue;
+        }
+
+        #page {
+            display: grid;
+            width: 100%;
+            height: 850px;
+            grid-template-areas: "head head" "nav nav" "div1 div2" "foot foot";
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-rows: 1fr 1fr 3fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+            #page > header {
+                grid-area: head;
+                background-color: #8ca0ff;
+            }
+
+            #page > nav {
+                grid-area: nav;
+                background-color: #ffa08c;
+            }
+
+            #page > main {
+                grid-area: main;
+                background-color: #ffff64;
+            }
+            div#div1 {
+                grid-area: div1;
+                background-color: darkred;
+            }
+        div#div2 {
+            grid-area: div2;
+            background-color: pink;
+        }
+
+            #page > footer {
+                grid-area: foot;
+                background-color: #8cffa0;
+            }
+
+
+        
+        @media (max-width: 800px) {
+            #page {
+                border: 10px solid red;
+                grid-template-areas: "head head" "nav nav" "div1 div1" "div2 div2" "foot foot";
+               
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <section id="page">
+        <header>En-tête</header>
+        <nav>Navigation <button>MONBUTTON1</button><button>MON BUTTON2</button><button>MONBUTTON3</button><button>MON BUTTON4</button><button>MONBUTTON5</button><button>MON BUTTON6</button></nav>
+        
+            <div id="div1">Zone principale1
+        
+                <button>MONBUTTON1</button><button>MON BUTTON2</button>
+            </div>
+            <div id="div2">Zone principale2<button>MONBUTTON1</button><button>MON BUTTON2</button></div>
+       
+        <footer>Pied de page</footer>
+    </section>
+   
+</body>
+</html>

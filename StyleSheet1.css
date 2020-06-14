@@ -1,0 +1,409 @@
+﻿@font-face {
+    font-family: "Heart-Breaking-Bad";
+    src: url("fonts/Heart-Breaking-Bad.otf"),url('maFonte.eot');
+    src: local(Heart-Breaking-Bad), url('fonts/Heart-Breaking-Bad.ttf') format('truetype'), url('fonts/Heart-Breaking-Bad.svg#Heart-Breaking-Bad') format("svg"), url('fonts/Heart-Breaking-Bad.woff') format('woff');
+}
+
+h1 {
+    color: white;
+    font-size:40px;
+    
+}
+    h1#title_tab {
+        font-family: Heart-Breaking-Bad;
+        font-size:40px;
+        margin-top:125px;
+    }
+p{
+    color: black;
+}
+body {
+    background-image: url("green_background.jpg");
+    background-size:cover;
+    margin:0;
+}
+footer {
+    color:white;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header nav ul {
+    border: 1px solid transparent;
+}
+figure {
+    float: right;
+    width: 10%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 15px;
+}
+figcaption{
+    background-color:white;
+    font-size:smaller;
+}
+audio{
+    display:none;
+}
+nav {
+    font-family: Heart-Breaking-Bad;
+    background-color: #3c7f32;
+    background-image: url("pngwave.png");
+    background-position-x: 85%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    font-size: 50px;
+}
+    nav a:link, nav a:visited {
+        color: #000;
+        padding: 0px 40px 0px 0px;
+        float: left;
+        width: auto;
+        text-decoration: none;
+        margin-left: 5px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    nav a:hover {
+        background-color: #006400;
+        color: white;
+    }
+li{
+    display:inline;
+}
+/* classe navigation */
+.currentNav a {
+    background-color: #dfab0d;
+    border-top: 2px solid black;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+
+
+
+#tab_describe {
+    
+    background-color: darkgreen;
+    font-family: 'Century Gothic';
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+    #tab_describe tbody tr:nth-child(odd) {
+        background-color: #d7d7d7;
+    }
+
+    #tab_describe th {
+        color: white;
+        background-color: darkgreen;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #tab_describe tr {
+        background-color: white;
+    }
+
+    #tab_describe td {
+        padding: 8px;
+        color: black;
+    }
+
+    #tab_describe tbody tr:nth-child(odd) {
+        background-color: #8FBC8F;
+    }
+
+        #tab_describe tr:hover, #tab_describe tbody tr:nth-child(odd):hover {
+            background-color: #32CD32;
+        }
+
+#big_photo {
+    border-radius: 100px;
+    padding: 10px 0px 0px 10px;
+    width:57%;
+    height:auto;
+    margin:20px;
+}
+
+
+
+/*mise en forme de la page descritption des personnages*/
+#page > header {
+    grid-area: head;
+}
+
+div#div_image {
+    grid-area: div1;
+}
+
+div#div_tab {
+    text-align: center;
+    grid-area: div2;
+}
+
+#page > footer {
+    grid-area: foot;
+}
+#page {
+    display: grid;
+    width: 100%;
+    height: 1500px;
+    grid-template-areas: "head head" "main main" "foot foot";
+    grid-template-columns: 1fr;
+    grid-template-rows:110px 4fr 1fr ;
+}
+main#main_description {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "div1 div2";
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 687px) {
+    main#main_description {
+        grid-template-areas: "div1 div1" "div2 div2";
+    }
+    #page {
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+}
+/*mise en forme de la page liste des personnages*/
+div#the_list {
+    grid-area: div3;
+}
+
+body#page_list {
+    display: grid;
+    width: 99%;
+    grid-template-areas: "head" "div3" "foot";
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+footer p span{
+    color:white;
+    border:1px solid white;
+}
+
+div.rdmQuote h1, div.rdmQuote h2, div.rdmQuote h3 {
+    color:white;
+    text-align:center;
+}
+div.rdmQuote h2{
+    font-style:italic;
+}
+div.rdmQuote{
+    padding:150px;
+    
+}
+
+/* character list imge mouseover*/
+
+div#the_list img:hover{
+    
+    border:0px solid red;
+}
+
+.nohide {
+    color:white;
+    visibility:visible;
+
+}
+.hide {
+    color: white;
+    visibility: hidden;
+}
+p.person {
+    cursor: help;
+    border: 1px solid transparent;
+   
+}
+
+p.person:hover {
+  border:1px solid white;
+}
+/*mise en page des crédits*/
+#image_louis, #image_benoit{
+    width: 600px;
+    height: 650px;
+    width:40%;
+    height:auto;
+    margin-top:50px;
+}
+#page_credit > header{
+    grid-area: head;
+}
+#page_credit > main {
+    grid-area:main;
+}
+#page_credit > footer{
+    grid-area:foot;
+}
+#page_credit {
+    display: grid;
+    width: 100%;
+    height: 1500px;
+    grid-template-areas: "head head" "main main" "foot foot";
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 4fr 1fr;
+}
+div#credits_ben {
+    grid-area: ben;
+}
+div#credit_louis {
+    grid-area: louis;
+}
+div#credits_louis img{
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+div#credits_ben img{
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+div#credits_louis img:hover {
+    border-radius: 50%; /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+}
+div#credits_ben img:hover {
+    border-radius: 50%; /* on arrondit l'image */
+    -webkit-transform: rotate(360deg); /* rotation de l'image */
+    transform: rotate(360deg);
+}
+
+
+div#descr_ben {
+    grid-area: dc_ben;
+}
+div#descr_louis {
+    grid-area: dc_louis;
+}
+div#descr_ben p,div#descr_louis p{
+    background-color:white;
+    color: black;
+    border: 1px solid white;
+    width:40%;
+}
+
+#main_credits {
+    display: grid;
+    width: 100%;
+    height: 1500px;
+    grid-template-areas: "ben louis" "dc_ben dc_louis";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+}
+/*MISE EN PAGE DU QUIZZ*/
+#the_quote p, #the_death p,#the_nickname p{
+    color:white;
+}
+.quizz_style {
+    width: 40%;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+    .quizz_style h1 {
+        font-family: Heart-Breaking-Bad;
+    }
+
+button {
+    background-color: #dfab0d;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    border-radius: 8px;
+    border: solid 1px #000000;
+    margin-top:4px;
+}
+button:hover {
+    background-color: #006400;
+    color: white;
+}
+div#div_tab button.btn_next{
+    float:right;
+}
+div#div_tab button.btn_prev {
+    float: left;
+}
+div.result{
+    color:white;
+    font-size:16px;
+    font-family:'Century Gothic';
+}
+.bad{
+    color:red;
+}
+.good {
+    color: #dfab0d;
+}
+.video {
+    display: none;
+    padding-left: 200px;
+    padding-top: 125px;
+}
+.video div,.video iframe{
+    float:left;
+}
+   
+.show{
+    display:block;
+}
+div.clear{
+    clear:both; 
+    border: solid 0px transparent!important;
+}
+.video div {
+    color:white;
+    font-size:16px;
+    font-family:'Century Gothic';
+    margin-left:10px;
+    border:solid 1px white;
+    padding:10px;
+    width:35%;
+}
+.video button {
+    display: block;
+    margin-top: 10px;
+   
+}
+main {
+    height: 1000px;
+}
+    main#char_list{
+        height:2000px;
+    }
+footer p a img {
+    width:25px;
+    height:25px;
+}
+footer p a{
+    margin:5px;
+}
+footer p a:visited,footer p a:link{
+    color:white;
+    font-family:'Century Gothic';
+    font-size:12px;
+}
+div.footer1 {
+    text-align: center;
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+div.footer1 p span{
+    border:0;
+    margin-left:20px;
+    font-size: 16px;
+}
+.descr p {
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}

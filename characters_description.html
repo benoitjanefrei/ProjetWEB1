@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Character description</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <script type="text/javascript" src="script1.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body onload="display_footer();queryString = window.location.search; urlParams = new URLSearchParams(queryString); my_char_id = urlParams.get('char_id');console.log('LETESTMYCHARID', my_char_id); description(my_char_id)">
+    <section id="page">
+        <header>
+            <nav>
+                <ul>
+                    <li class="element_menu">
+                        <a href="breaking_bad_home_page.html">Home</a>
+                    </li>
+                    <li class="element_menu">
+                        <a href="characters_list.html">Lst</a>
+                    </li>
+                    <li class="element_menu ">
+                        <a href="video_best_moment.html">Best moments</a>
+                    </li>
+                    <li class="element_menu currentNav">
+                        <a href="characters_description.html?char_id=1">5eaking guy</a>
+                    </li>
+                    <li class="element_menu">
+                        <a href="quizz.html">Your turn</a>
+                    </li>
+                    <li class="element_menu">
+                        <a href="credits.html">Credits</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main_description">
+            <div id="div_image">
+                <center>
+                    <img id="big_photo" src="#" />
+                </center>
+            </div>
+            <div id="div_tab">
+                <h1 id="title_tab">Waiting for the title please wait</h1>
+                <table id="tab_describe">
+                    <thead>
+                        <tr>
+                            <th>ATTIBUT</th>
+                            <th>VALUE</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="row1">
+                            <td>Name</td>
+                        </tr>
+                        <tr id="row2">
+                            <td>Birthday</td>
+                        </tr>
+                        <tr id="row3">
+                            <td>Occupation</td>
+                        </tr>
+                        <tr id="row4">
+                            <td>Status</td>
+                        </tr>
+                        <tr id="row5">
+                            <td>Nickname</td>
+                        </tr>
+                        <tr id="row6">
+                            <td>Portrayed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+            <div class="footer1">
+                <p>
+                    <span id="death"></span>
+                    <span id="episodes"></span>
+                    <span id="quotes"></span>
+
+                </p>
+            </div>
+            <p>
+                <a href="credits.html">Credits</a>
+                <a target="new" href="https://www.facebook.com/benoit.jan.3"><img src="facebook.png" /></a>
+                <a target="new" href="https://www.instagram.com/pms_benoit/"><img src="instagram.png" /></a>
+            </p>
+
+        </footer>
+    </section>
+</body>
+</html>

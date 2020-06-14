@@ -1,0 +1,135 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Best moment of breaking bad</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script type="text/javascript" src="script1.js"></script>
+</head>
+<body onload="display_footer();">
+    <header>
+        <nav>
+            <ul>
+                <li class="element_menu">
+                    <a href="breaking_bad_home_page.html">Home</a>
+                </li>
+                <li class="element_menu">
+                    <a href="characters_list.html">Lst</a>
+                </li>
+                <li class="element_menu currentNav">
+                    <a href="video_best_moment.html">Best moments</a>
+                </li>
+                <li class="element_menu">
+                    <a href="characters_description.html?char_id=1">5eaking guy</a>
+                </li>
+                <li class="element_menu">
+                    <a href="quizz.html">Your turn</a>
+                </li>
+                <li class="element_menu">
+                    <a href="credits.html">Credits</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="video1" class="video show">
+            <h1>Season 1 Episode 1 : Where it all started : Walter meets Jesse</h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/syrW-M41O3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                Every story has a beginning, and this is where it all started : Walter White meets Jesse Pinkman and decide to partner up with him.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video2');"> Next video</button>
+            </div>
+        </div>
+        <div id="video2" class="video">
+            <h1>Season 1 Episode 6 : Walter’s force demonstration against Tuco</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/i8HATRPJwAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                When Tuco and everyone thought they wouldn’t have to worry about Walter White, he decided to show his power in a great way.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video3');"> Next video</button>
+            </div>
+        </div>
+        <div id="video3" class="video">
+            <h1>Season 2 Episode 12 : Jane’s death : a turning point for Jesse</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JicX5cwerGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                Jesse fell in love with Jane; but she also was a drug-addict and they did drugs together. Walter thought she was a terrible thing for Jesse, and decided to not save her when he could, which destroyed Jesse.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video4');"> Next video</button>
+            </div>
+        </div>
+        <div id="video5" class="video">
+            <h1>Season 3 Episode 13 : Jesse protecting Walter and his lives</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L-4-47jPFak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                This time, to save their lives they had to do something really intense : Kill Gale so that Gus couldn’t kill them.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video6');"> Next video</button>
+            </div>
+        </div>
+        <div id="video4" class="video">
+            <h1>Season 4 Episode 6 : « I’m the one who knocks »</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wMEq1mGpP5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                Walter decided that this time he had to show his real face to Skyler who was worried for him. And she ended up scared of him.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video5');"> Next video</button>
+            </div>
+        </div>
+        <div id="video6" class="video">
+            <h1>Season 4 Episode 13 : Gus’s death</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eoAWzdAVuTo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                A great season finale : drug kingpin Gustavo Fring thought he won over Walter, Jesse and the Salamanca family, but they kept one last surprise for Gus.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video7');"> Next video</button>
+            </div>
+        </div>
+        <div id="video7" class="video">
+            <h1>Season 5 Episode 7 : « Say my name »</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5eZOOEkrf6Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                This is recognition and one of the best moment of Breaking Bad; this is the time everyone knew who Walter White was : Heisenberg.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video8');"> Next video</button>
+            </div>
+        </div>
+        <div id="video8" class="video">
+            <h1>Season 5 Episode 16 : The end</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6AlEEcanbus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div>
+                Every story has an end , and this is where it all finished : Farewell Heisenberg.
+            </div>
+            <div class="clear">
+                <button onclick="next_video('video1');"> Next video</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+        <div class="footer1">
+            <p>
+                <span id="death"></span>
+                <span id="episodes"></span>
+                <span id="quotes"></span>
+
+            </p>
+        </div>
+        <p>
+            <a href="credits.html">Credits</a>
+            <a target="new" href="https://www.facebook.com/benoit.jan.3"><img src="facebook.png" /></a>
+            <a target="new" href="https://www.instagram.com/pms_benoit/"><img src="instagram.png" /></a>
+        </p>
+    </footer>
+</body>
+</html>
